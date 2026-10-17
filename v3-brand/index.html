@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D-друк і 3D-моделювання на замовлення у Львові</title>
+<meta name="description" content="Друкуємо робочі деталі з пластику і моделюємо їх за фото, ескізом або зразком. Ціну називаємо до замовлення. Доставка по Україні.">
+<meta name="theme-color" content="#2B2BE0">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до змісту</a>
+
+<!-- PROTOTYPE v3-brand. Brand name, prices, hours, contacts are placeholders in [ ] and marked data-placeholder. -->
+<header class="top">
+  <div class="wrap top__in">
+    <a class="mark" href="#main" aria-label="[НАЗВА], на початок сторінки" data-placeholder="brand-name">
+      <svg class="mark__tag" viewBox="0 0 28 18" aria-hidden="true"><path d="M6 1h21v16H6L1 9z" fill="currentColor"/><circle cx="7.5" cy="9" r="2" fill="var(--paper)"/></svg>
+      <span>[НАЗВА]</span>
+    </a>
+    <p class="top__where">Львів <span aria-hidden="true">·</span> по всій Україні</p>
+    <nav class="top__nav" aria-label="Швидкий звʼязок">
+      <a class="chip" href="#tg" data-placeholder="telegram-link">Telegram</a>
+      <a class="chip" href="#viber" data-placeholder="viber-link">Viber</a>
+      <a class="chip chip--ghost" href="#tel" data-placeholder="phone">[телефон]</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- block: hero + price-anchor (headline tag) -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero__grid">
+    <p class="hero__eyebrow"><span class="dot" aria-hidden="true"></span>Майстерня у Львові, відправка по всій Україні</p>
+
+    <h1 id="h1" class="hero__title">3D-друк і моделювання робочих деталей <mark>з&nbsp;ціною до&nbsp;замовлення</mark></h1>
+
+    <div class="hero__tagwrap">
+      <div class="tag tag--hero" role="group" aria-label="Орієнтовна ціна">
+        <span class="tag__hole" aria-hidden="true"></span>
+        <p class="tag__kicker">Друк FDM</p>
+        <p class="tag__price"><span class="tag__from">від</span> <span data-placeholder="price-per-gram">[X]</span><span class="tag__unit">грн/г</span></p>
+        <p class="tag__meta">мінімум <b data-placeholder="min-order">[X]&nbsp;грн</b> <span aria-hidden="true">·</span> приклад, ціну підтвердить виконавець</p>
+        <svg class="tag__code" viewBox="0 0 120 14" aria-hidden="true" preserveAspectRatio="none"><path d="M0 0h3v14H0zm5 0h1v14H5zm3 0h2v14H8zm4 0h1v14h-1zm3 0h3v14h-3zm5 0h1v14h-1zm3 0h1v14h-1zm3 0h3v14h-3zm5 0h2v14h-2zm4 0h1v14h-1zm4 0h3v14h-3zm5 0h1v14h-1zm3 0h2v14h-2zm4 0h1v14h-1zm3 0h3v14h-3zm6 0h1v14h-1zm3 0h2v14h-2zm4 0h1v14h-1zm3 0h3v14h-3zm5 0h1v14h-1zm3 0h1v14h-1zm4 0h3v14h-3zm5 0h2v14h-2zm4 0h1v14h-1zm3 0h3v14h-3z" fill="currentColor"/></svg>
+      </div>
+      <p class="hero__objection"><b>А якщо не підійде?</b> Ми спершу називаємо ціну і строк та погоджуємо матеріал. Друкуємо лише після вашого підтвердження і перевіряємо розміри.</p>
+    </div>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#rozrakhunok">Розрахувати вартість
+        <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h12m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></a>
+      <a class="btn btn--secondary" href="#tg" data-placeholder="telegram-link">Написати в Telegram або Viber</a>
+    </div>
+
+    <p class="hero__lead">Друкуємо функціональні деталі на 3D-принтерах Bambu Lab і моделюємо їх за фото, ескізом, кресленням або зламаним зразком. Майстерня у Львові, відправка по всій Україні.</p>
+
+    <p class="hero__contacts">
+      <a href="#tg" data-placeholder="telegram-link">Telegram</a> <span aria-hidden="true">·</span>
+      <a href="#viber" data-placeholder="viber-link">Viber</a> <span aria-hidden="true">·</span>
+      <a href="#tel" data-placeholder="phone">[телефон]</a>
+    </p>
+
+    <figure class="hero__photo shot">
+      <picture>
+        <source type="image/avif" srcset="img/hero-640.avif 640w, img/hero-960.avif 960w, img/hero-1264.avif 1264w" sizes="(min-width: 960px) 46vw, 100vw">
+        <img src="img/hero-960.webp" srcset="img/hero-640.webp 640w, img/hero-960.webp 960w, img/hero-1264.webp 1264w" sizes="(min-width: 960px) 46vw, 100vw" width="1264" height="848" alt="Ілюстрація: сині пластикові деталі (кронштейн, шестерня, кліпса, ручка, петля, втулка) і штангенциркуль на світлому папері" fetchpriority="high" decoding="async" data-placeholder="ai-illustration">
+      </picture>
+      <figcaption class="shot__flag">Ілюстрація, не наша робота</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- packing-tape strip: only facts from the copy -->
+<div class="tapewrap" aria-hidden="true"><div class="tape">
+  <div class="tape__run">
+    <span>STL</span><span>3MF</span><span>STEP</span><span>фото з лінійкою</span><span>ескіз</span><span>PLA</span><span>PETG</span><span>ASA</span><span>Нова пошта</span><span>Укрпошта</span><span>Львів</span>
+    <span>STL</span><span>3MF</span><span>STEP</span><span>фото з лінійкою</span><span>ескіз</span><span>PLA</span><span>PETG</span><span>ASA</span><span>Нова пошта</span><span>Укрпошта</span><span>Львів</span>
+  </div>
+</div>
+</div>
+
+<!-- block: price-anchor -->
+<section class="sec prices" aria-labelledby="prices-h">
+  <div class="wrap">
+    <h2 id="prices-h" class="sec__title">Ціна до замовлення, <span class="u">а не після</span></h2>
+    <ul class="pricegrid">
+      <li class="ptag">
+        <span class="ptag__hole" aria-hidden="true"></span>
+        <p class="ptag__k">Друк FDM</p>
+        <p class="ptag__v">від <span data-placeholder="price-per-gram">[X]</span> <small>грн/г</small></p>
+        <p class="ptag__n">приклад, ціну підтвердить виконавець</p>
+      </li>
+      <li class="ptag ptag--light">
+        <span class="ptag__hole" aria-hidden="true"></span>
+        <p class="ptag__k">Мінімальне замовлення</p>
+        <p class="ptag__v"><span data-placeholder="min-order">[X]</span> <small>грн</small></p>
+        <p class="ptag__n">за одне замовлення</p>
+      </li>
+      <li class="ptag ptag--light">
+        <span class="ptag__hole" aria-hidden="true"></span>
+        <p class="ptag__k">Відповідь на заявку</p>
+        <p class="ptag__v">≈1 <small>год</small></p>
+        <p class="ptag__n">орієнтовно протягом години в робочий час, <span data-placeholder="hours">[години роботи]</span></p>
+      </li>
+    </ul>
+    <p class="draft"><b>Чернетка.</b> Ціна за грам, мінімальна сума, години роботи і ціль «відповідь протягом години» підтверджує виконавець; дату «актуально на» ставить власник.</p>
+  </div>
+</section>
+
+<!-- block: start-ways -->
+<section class="sec ways" aria-labelledby="ways-h">
+  <div class="wrap">
+    <h2 id="ways-h" class="sec__title">Три способи почати</h2>
+    <ol class="waygrid">
+      <li class="way">
+        <figure class="way__img shot">
+          <picture>
+            <source type="image/avif" srcset="img/druk-480.avif 480w, img/druk-800.avif 800w" sizes="(min-width: 960px) 30vw, 100vw">
+            <img src="img/druk-480.webp" srcset="img/druk-480.webp 480w, img/druk-800.webp 800w" sizes="(min-width: 960px) 30vw, 100vw" width="800" height="597" loading="lazy" decoding="async" alt="Ілюстрація: сопло 3D-принтера друкує синю деталь" data-placeholder="ai-illustration">
+          </picture>
+          <figcaption class="shot__flag">Ілюстрація</figcaption>
+        </figure>
+        <p class="way__n" aria-hidden="true">01</p>
+        <h3 class="way__h">Є файл.</h3>
+        <p>Надішліть STL, 3MF або STEP. Порахуємо масу, строк і ціну.</p>
+        <p class="way__chips"><span>STL</span><span>3MF</span><span>STEP</span></p>
+      </li>
+      <li class="way way--hot">
+        <figure class="way__img shot">
+          <picture>
+            <source type="image/avif" srcset="img/zrazok-480.avif 480w, img/zrazok-800.avif 800w" sizes="(min-width: 960px) 30vw, 100vw">
+            <img src="img/zrazok-480.webp" srcset="img/zrazok-480.webp 480w, img/zrazok-800.webp 800w" sizes="(min-width: 960px) 30vw, 100vw" width="800" height="597" loading="lazy" decoding="async" alt="Ілюстрація: тріснута сіра прищіпка поруч із синьою надрукованою заміною і лінійкою" data-placeholder="ai-illustration">
+          </picture>
+          <figcaption class="shot__flag">Ілюстрація</figcaption>
+        </figure>
+        <p class="way__n" aria-hidden="true">02</p>
+        <h3 class="way__h">Є зламана деталь.</h3>
+        <p>Сфотографуйте її поруч із лінійкою і додайте 2-3 розміри. Скажемо, чи можна її відтворити.</p>
+        <p class="way__chips"><span>фото</span><span>лінійка</span><span>2-3 розміри</span></p>
+      </li>
+      <li class="way">
+        <figure class="way__img shot">
+          <picture>
+            <source type="image/avif" srcset="img/vymir-480.avif 480w, img/vymir-800.avif 800w" sizes="(min-width: 960px) 30vw, 100vw">
+            <img src="img/vymir-480.webp" srcset="img/vymir-480.webp 480w, img/vymir-800.webp 800w" sizes="(min-width: 960px) 30vw, 100vw" width="800" height="597" loading="lazy" decoding="async" alt="Ілюстрація: руки міряють синій кронштейн штангенциркулем" data-placeholder="ai-illustration">
+          </picture>
+          <figcaption class="shot__flag">Ілюстрація</figcaption>
+        </figure>
+        <p class="way__n" aria-hidden="true">03</p>
+        <h3 class="way__h">Є лише ідея.</h3>
+        <p>Опишіть завдання словами або намалюйте ескіз. Запропонуємо модель і матеріал.</p>
+        <p class="way__chips"><span>опис</span><span>ескіз</span></p>
+      </li>
+    </ol>
+    <div class="ways__cta">
+      <a class="btn btn--primary" href="#rozrakhunok">Надіслати файл або фото
+        <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h12m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></a>
+      <p class="draft draft--inline"><b>Чернетка.</b> Перелік форматів файлів підтверджує виконавець.</p>
+    </div>
+  </div>
+</section>
+
+<!-- block: steps -->
+<section class="sec steps" aria-labelledby="steps-h">
+  <div class="wrap">
+    <h2 id="steps-h" class="sec__title sec__title--light">Як це працює</h2>
+    <ol class="stepline">
+      <li class="step"><span class="step__n" aria-hidden="true">1</span><p>Ви надсилаєте файл, фото або опис.</p></li>
+      <li class="step"><span class="step__n" aria-hidden="true">2</span><p>Ми рахуємо ціну і строк, погоджуємо з вами матеріал.</p></li>
+      <li class="step"><span class="step__n" aria-hidden="true">3</span><p>Ви підтверджуєте замовлення. Ми друкуємо і перевіряємо розміри.</p></li>
+      <li class="step"><span class="step__n" aria-hidden="true">4</span><p>Ви забираєте деталь у Львові або отримуєте її Новою поштою чи Укрпоштою.</p></li>
+    </ol>
+    <p class="draft draft--dark"><b>Чернетка.</b> Чи потрібна передоплата і яка частка, вирішують власник і виконавець.</p>
+  </div>
+</section>
+
+<!-- block: proof -->
+<section class="sec proof" aria-labelledby="proof-h">
+  <div class="wrap">
+    <h2 id="proof-h" class="sec__title">Деталі, які вже працюють</h2>
+    <ul class="slots">
+      <li class="slot"><span class="slot__k">Фото 1</span><p>Тут буде фото: функціональна деталь поруч із лінійкою; матеріал <span data-placeholder="material">[X]</span>; час друку <span data-placeholder="print-time">[X]</span> год</p></li>
+      <li class="slot"><span class="slot__k">Фото 2</span><p>Тут буде фото: зламана деталь і надрукована заміна поруч, штангенциркуль у кадрі</p></li>
+      <li class="slot"><span class="slot__k">Фото 3</span><p>Тут буде фото: корпус або кріплення на місці встановлення</p></li>
+    </ul>
+
+    <div class="mats">
+      <figure class="mats__img shot">
+        <picture>
+          <source type="image/avif" srcset="img/sharu-480.avif 480w, img/sharu-800.avif 800w" sizes="(min-width: 960px) 40vw, 100vw">
+          <img src="img/sharu-480.webp" srcset="img/sharu-480.webp 480w, img/sharu-800.webp 800w" sizes="(min-width: 960px) 40vw, 100vw" width="800" height="597" loading="lazy" decoding="async" alt="Ілюстрація: шари друку на краю синьої пластикової деталі крупним планом" data-placeholder="ai-illustration">
+        </picture>
+        <figcaption class="shot__flag">Ілюстрація</figcaption>
+      </figure>
+      <table class="mats__table">
+        <caption class="sr">Матеріали і де вони доречні</caption>
+        <thead><tr><th scope="col">Матеріал</th><th scope="col">Де доречний</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">PLA</th><td>макети, прототипи форми, деталі для приміщень</td></tr>
+          <tr><th scope="row">PETG</th><td>деталі під помірне навантаження і вологу</td></tr>
+          <tr><th scope="row">ASA</th><td>деталі для вулиці і сонця</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="draft"><b>Чернетка.</b> Фото робіт надає виконавець; матеріали в наявності і їхнє призначення виконавець підтверджує, властивості звіряємо з даташитами виробника.</p>
+  </div>
+</section>
+
+<!-- block: delivery -->
+<section class="sec delivery" aria-labelledby="delivery-h">
+  <div class="wrap delivery__grid">
+    <div>
+      <h2 id="delivery-h" class="sec__title">Отримання і оплата</h2>
+      <ul class="dlist">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" fill="currentColor"/></svg><p><b>У Львові:</b> особиста передача, місце і час погоджуємо.</p></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5zM3 7.5l9 4.5 9-4.5M12 12v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><p><b>По Україні:</b> Нова пошта або Укрпошта.</p></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 10h19" stroke="currentColor" stroke-width="2"/></svg><p>Замовник оплачує замовлення і доставку за тарифом перевізника.</p></li>
+      </ul>
+    </div>
+    <figure class="delivery__img shot">
+      <picture>
+        <source type="image/avif" srcset="img/paket-480.avif 480w, img/paket-800.avif 800w" sizes="(min-width: 960px) 40vw, 100vw">
+        <img src="img/paket-480.webp" srcset="img/paket-480.webp 480w, img/paket-800.webp 800w" sizes="(min-width: 960px) 40vw, 100vw" width="800" height="597" loading="lazy" decoding="async" alt="Ілюстрація: синя деталь у прозорому пакеті з чистою биркою на картонній коробці" data-placeholder="ai-illustration">
+      </picture>
+      <figcaption class="shot__flag">Ілюстрація</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- calculate: lead form (prototype, posts nowhere) -->
+<section class="sec calc" id="rozrakhunok" aria-labelledby="calc-h">
+  <div class="wrap calc__grid">
+    <div class="calc__intro">
+      <h2 id="calc-h" class="sec__title">Розрахувати вартість</h2>
+      <p>Файл, фото або опис. Ціну і строк назвемо до замовлення.</p>
+      <p class="calc__alt">Або одразу в месенджер:
+        <a href="#tg" data-placeholder="telegram-link">Telegram</a>,
+        <a href="#viber" data-placeholder="viber-link">Viber</a>,
+        <a href="#tel" data-placeholder="phone">[телефон]</a></p>
+    </div>
+    <form class="form" action="#" method="post" data-placeholder="form-endpoint" novalidate>
+      <fieldset class="form__set">
+        <legend>Що у вас є</legend>
+        <div class="seg">
+          <input type="radio" id="have-file" name="have" value="file" checked><label for="have-file">Файл</label>
+          <input type="radio" id="have-part" name="have" value="part"><label for="have-part">Зламана деталь</label>
+          <input type="radio" id="have-idea" name="have" value="idea"><label for="have-idea">Ідея</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="f-file">Файл або фото</label>
+        <input id="f-file" name="file" type="file" multiple accept=".stl,.3mf,.step,.stp,image/*">
+        <p class="field__hint">STL, 3MF, STEP або фото поруч із лінійкою</p>
+      </div>
+      <div class="field">
+        <label for="f-mat">Матеріал</label>
+        <select id="f-mat" name="material">
+          <option>Не знаю, порадьте</option><option>PLA</option><option>PETG</option><option>ASA</option>
+        </select>
+      </div>
+      <div class="field field--short">
+        <label for="f-qty">Кількість, шт.</label>
+        <input id="f-qty" name="qty" type="number" inputmode="numeric" min="1" value="1">
+      </div>
+      <div class="field">
+        <label for="f-contact">Telegram, Viber або телефон <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-contact" name="contact" type="text" autocomplete="tel" required aria-describedby="f-contact-hint">
+        <p class="field__hint" id="f-contact-hint">Куди надіслати ціну</p>
+      </div>
+      <button class="btn btn--primary btn--wide" type="submit">Надіслати на розрахунок
+        <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h12m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+      <p class="draft draft--inline"><b>Прототип.</b> Форма поки нікуди не надсилає дані.</p>
+    </form>
+  </div>
+</section>
+
+<!-- block: faq -->
+<section class="sec faq" aria-labelledby="faq-h">
+  <div class="wrap faq__grid">
+    <h2 id="faq-h" class="sec__title">Коротко про головне</h2>
+    <div class="faq__list">
+      <details open>
+        <summary>Скільки коштує надрукувати деталь?</summary>
+        <p>Ціна залежить від маси, матеріалу і кількості. Орієнтир від <span data-placeholder="price-per-gram">[X]</span> грн/г, мінімум <span data-placeholder="min-order">[X]</span> грн. Точну суму назвемо після файлу або фото.</p>
+      </details>
+      <details>
+        <summary>У мене немає 3D-моделі. Що робити?</summary>
+        <p>Змоделюємо її за фото, ескізом, кресленням або зразком.</p>
+      </details>
+      <details>
+        <summary>Ви друкуєте будь-що?</summary>
+        <p>Ні. Перелік того, за що ми не беремося, є на сторінці <a href="#" data-placeholder="page-pro-nas" title="Сторінка з'явиться на сайті">«Про нас»</a>.</p>
+      </details>
+      <details>
+        <summary>Ви працюєте з іншими містами?</summary>
+        <p>Так. Файл або фото можна надіслати онлайн, а готову деталь ми відправимо поштою.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- block: cta -->
+<section class="final" id="final" aria-labelledby="final-h">
+  <div class="wrap">
+    <h2 id="final-h" class="final__title">Надішліть файл або фото: ціну назвемо до&nbsp;замовлення</h2>
+    <div class="final__row">
+      <a class="btn btn--paper" href="#rozrakhunok">Розрахувати вартість
+        <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h12m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg></a>
+      <p class="final__contacts">
+        <a href="#tg" data-placeholder="telegram-link">Telegram</a> <span aria-hidden="true">·</span>
+        <a href="#viber" data-placeholder="viber-link">Viber</a> <span aria-hidden="true">·</span>
+        <a href="#tel" data-placeholder="phone">[телефон]</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- block: links + footer (wordmark footer adapted from 21st.dev "Giant Wordmark Footer") -->
+<footer class="foot">
+  <div class="foot__shapes" aria-hidden="true"><span class="foot__disc"></span><span class="foot__slab"></span></div>
+  <div class="wrap foot__in">
+    <nav aria-label="Корисні сторінки">
+      <ul class="foot__links">
+        <li><a href="#" data-placeholder="page-tsiny" title="Сторінка з'явиться на сайті">ціни на 3D-друк за грам</a></li>
+        <li><a href="#" data-placeholder="page-3d-druk-lviv" title="Сторінка з'явиться на сайті">3D-друк у Львові</a></li>
+        <li><a href="#" data-placeholder="page-3d-modeliuvannia" title="Сторінка з'явиться на сайті">3D-моделювання за фото або ескізом</a></li>
+        <li><a href="#" data-placeholder="page-detal-za-zrazkom" title="Сторінка з'явиться на сайті">деталь за зразком замість зламаної</a></li>
+        <li><a href="#" data-placeholder="page-3d-druk-fdm" title="Сторінка з'явиться на сайті">інженерний FDM-друк</a></li>
+        <li><a href="#" data-placeholder="page-dostavka-oplata" title="Сторінка з'явиться на сайті">доставка і оплата</a></li>
+        <li><a href="#" data-placeholder="page-pro-nas" title="Сторінка з'явиться на сайті">що ми не беремося друкувати</a></li>
+      </ul>
+    </nav>
+    <p class="foot__word" aria-hidden="true" data-placeholder="brand-name">[НАЗВА]</p>
+    <p class="foot__legal"><span data-placeholder="brand-name">[НАЗВА]</span> <span aria-hidden="true">·</span> прототип дизайну, усі фото на сторінці є ілюстраціями</p>
+  </div>
+</footer>
+
+<!-- sticky mobile action bar -->
+<nav class="dock" aria-label="Швидкі дії">
+  <a class="dock__main" href="#rozrakhunok">Розрахувати</a>
+  <a class="dock__btn" href="#tg" data-placeholder="telegram-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Telegram</a>
+  <a class="dock__btn" href="#viber" data-placeholder="viber-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Viber</a>
+</nav>
+</body>
+</html>

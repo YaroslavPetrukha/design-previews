@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D-друк і 3D-моделювання на замовлення у Львові | [НАЗВА]</title>
+<meta name="description" content="Друкуємо робочі деталі з пластику і моделюємо їх за фото, ескізом або зразком. Ціну називаємо до замовлення. Доставка по Україні.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#E4E3DF">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до змісту</a>
+
+<header class="masthead">
+  <div class="masthead__row">
+    <a class="wordmark" href="#top" aria-label="[НАЗВА], на початок сторінки"><span class="ph-brand" translate="no">[НАЗВА]</span></a>
+    <p class="masthead__issue">Майстерня 3D-друку · Львів · відправка по Україні</p>
+    <nav class="masthead__nav" aria-label="Розділи">
+      <a href="#tsiny">Ціни</a>
+      <a href="#yak">Як це працює</a>
+      <a href="#dostavka">Доставка</a>
+      <a href="#pytannia">Питання</a>
+    </nav>
+    <a class="btn btn--small" href="#tsiny">Розрахувати</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 01 HERO: headline + signature "оригінал / копія" comparison -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="hero__text">
+    <p class="kicker"><span class="folio">01</span> Робочі деталі з пластику</p>
+    <h1 id="h1">3D-друк і моделювання <em>робочих деталей</em> з&nbsp;ціною до&nbsp;замовлення</h1>
+    <p class="lead">Друкуємо функціональні деталі на 3D-принтерах <span translate="no">Bambu Lab</span> і моделюємо їх за фото, ескізом, кресленням або зламаним зразком. Майстерня у Львові, відправка по всій Україні.</p>
+    <div class="actions">
+      <a class="btn" href="#tsiny">Розрахувати вартість</a>
+      <a class="btn btn--ghost" href="#kontakty">Написати в Telegram або Viber</a>
+    </div>
+    <p class="contacts" id="kontakty"><a class="ph" href="#" data-placeholder="telegram-link">[Telegram]</a> · <a class="ph" href="#" data-placeholder="viber-link">[Viber]</a> · <a class="ph" href="#" data-placeholder="phone">[телефон]</a></p>
+  </div>
+
+  <figure class="compare" data-compare>
+    <div class="compare__stage">
+      <picture class="compare__img compare__img--before">
+        <source media="(min-width: 900px)" type="image/avif" srcset="img/clip-original-tall-480.avif 480w, img/clip-original-tall-700.avif 700w" sizes="(min-width: 1400px) 600px, 42vw">
+        <source media="(min-width: 900px)" type="image/webp" srcset="img/clip-original-tall-480.webp 480w, img/clip-original-tall-700.webp 700w" sizes="(min-width: 1400px) 600px, 42vw">
+        <source type="image/avif" srcset="img/clip-original-480.avif 480w, img/clip-original-800.avif 800w" sizes="100vw">
+        <source type="image/webp" srcset="img/clip-original-480.webp 480w, img/clip-original-800.webp 800w" sizes="100vw">
+        <img src="img/clip-original-800.webp" width="800" height="537" fetchpriority="high" decoding="async" data-placeholder="ai-illustration"
+             alt="Ілюстрація: стара пластикова кліпса, пожовкла, з відламаним виступом, на сталевій пластині.">
+      </picture>
+      <picture class="compare__img compare__img--after">
+        <source media="(min-width: 900px)" type="image/avif" srcset="img/clip-copy-tall-480.avif 480w, img/clip-copy-tall-700.avif 700w" sizes="(min-width: 1400px) 600px, 42vw">
+        <source media="(min-width: 900px)" type="image/webp" srcset="img/clip-copy-tall-480.webp 480w, img/clip-copy-tall-700.webp 700w" sizes="(min-width: 1400px) 600px, 42vw">
+        <source type="image/avif" srcset="img/clip-copy-480.avif 480w, img/clip-copy-800.avif 800w" sizes="100vw">
+        <source type="image/webp" srcset="img/clip-copy-480.webp 480w, img/clip-copy-800.webp 800w" sizes="100vw">
+        <img src="img/clip-copy-800.webp" width="800" height="537" decoding="async" data-placeholder="ai-illustration"
+             alt="Ілюстрація: та сама кліпса, надрукована заново з темно-сірого пластику, ціла, з видимими шарами друку.">
+      </picture>
+      <span class="compare__tag compare__tag--before" aria-hidden="true">Оригінал</span>
+      <span class="compare__tag compare__tag--after" aria-hidden="true">Копія</span>
+      <span class="compare__line" aria-hidden="true"><span class="compare__knob"></span></span>
+    </div>
+    <label class="compare__control">
+      <span class="sr-only">Порівняння: зсуньте, щоб побачити оригінал або копію</span>
+      <input type="range" min="0" max="100" value="50" step="1" data-compare-range>
+    </label>
+    <figcaption class="caption">
+      <span class="caption__no">Пл. 01</span>
+      <span>Оригінал і копія.<span class="js-only"> Потягніть лінію, щоб порівняти.</span></span>
+      <span class="ai-note">Ілюстрація, згенерована ШІ. Не робота майстерні.</span>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- 02 PRICE ANCHOR: spec sheet -->
+<section class="spec" id="tsiny" aria-labelledby="spec-h">
+  <h2 id="spec-h" class="sr-only">Ціна і строки відповіді</h2>
+  <dl class="spec__list">
+    <div class="spec__item">
+      <dt>Друк FDM</dt>
+      <dd><span class="spec__big">від <span class="ph-x">[X]</span> грн/г</span><span class="spec__note">приклад, ціну підтвердить виконавець</span></dd>
+    </div>
+    <div class="spec__item">
+      <dt>Мінімальне замовлення</dt>
+      <dd><span class="spec__big"><span class="ph-x">[X]</span> грн</span></dd>
+    </div>
+    <div class="spec__item">
+      <dt>Відповідь на заявку</dt>
+      <dd><span class="spec__big">≈ 1 год</span><span class="spec__note">орієнтовно протягом години в робочий час, <span class="ph-x">[години роботи]</span></span></dd>
+    </div>
+  </dl>
+  <p class="draft">Чернетка: ціна за грам, мінімальна сума, години роботи і ціль «відповідь протягом години» підтверджує виконавець; дату «актуально на» ставить власник.</p>
+</section>
+
+<!-- Interlude plate: layer lines -->
+<figure class="plate plate--bleed">
+  <picture>
+    <source type="image/avif" srcset="img/layers-480.avif 480w, img/layers-800.avif 800w, img/layers-1200.avif 1200w" sizes="100vw">
+    <source type="image/webp" srcset="img/layers-480.webp 480w, img/layers-800.webp 800w, img/layers-1200.webp 1200w" sizes="100vw">
+    <img src="img/layers-1200.webp" width="1200" height="670" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+         alt="Ілюстрація: макрознімок кута темно-сірої друкованої деталі, видно горизонтальні шари пластику.">
+  </picture>
+  <figcaption class="caption caption--inset">
+    <span class="caption__no">Пл. 02</span>
+    <span>Шари FDM-друку на стінці корпусної деталі.</span>
+    <span class="ai-note">Ілюстрація ШІ.</span>
+  </figcaption>
+</figure>
+
+<!-- 03 START WAYS -->
+<section class="ways" aria-labelledby="ways-h">
+  <header class="section-head">
+    <p class="kicker"><span class="folio">02</span> Звідки почати</p>
+    <h2 id="ways-h">Три способи почати</h2>
+  </header>
+  <ol class="ways__list">
+    <li class="ways__item">
+      <span class="ways__no" aria-hidden="true">01</span>
+      <h3>Є файл.</h3>
+      <p>Надішліть STL, 3MF або STEP. Порахуємо масу, строк і ціну.</p>
+    </li>
+    <li class="ways__item ways__item--photo">
+      <span class="ways__no" aria-hidden="true">02</span>
+      <h3>Є зламана деталь.</h3>
+      <p>Сфотографуйте її поруч із лінійкою і додайте 2-3 розміри. Скажемо, чи можна її відтворити.</p>
+      <figure class="ways__fig">
+        <picture>
+          <source type="image/avif" srcset="img/broken-ruler-480.avif 480w, img/broken-ruler-800.avif 800w" sizes="(min-width: 900px) 34vw, 100vw">
+          <source type="image/webp" srcset="img/broken-ruler-480.webp 480w, img/broken-ruler-800.webp 800w" sizes="(min-width: 900px) 34vw, 100vw">
+          <img src="img/broken-ruler-800.webp" width="800" height="537" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+               alt="Ілюстрація: тріснута сіра пластикова деталь поруч зі сталевою лінійкою, так зручно фотографувати для заявки.">
+        </picture>
+        <figcaption class="caption"><span class="caption__no">Пл. 03</span><span>Так виглядає вдале фото для заявки: деталь і лінійка в одному кадрі.</span><span class="ai-note">Ілюстрація ШІ.</span></figcaption>
+      </figure>
+    </li>
+    <li class="ways__item">
+      <span class="ways__no" aria-hidden="true">03</span>
+      <h3>Є лише ідея.</h3>
+      <p>Опишіть завдання словами або намалюйте ескіз. Запропонуємо модель і матеріал.</p>
+    </li>
+  </ol>
+  <div class="ways__cta">
+    <a class="btn" href="#kontakty">Надіслати файл або фото</a>
+    <p class="draft">Чернетка: перелік форматів файлів підтверджує виконавець.</p>
+  </div>
+</section>
+
+<!-- 04 STEPS -->
+<section class="steps" id="yak" aria-labelledby="steps-h">
+  <header class="section-head">
+    <p class="kicker"><span class="folio">03</span> Процес</p>
+    <h2 id="steps-h">Як це працює</h2>
+  </header>
+  <div class="steps__grid">
+    <ol class="steps__list">
+      <li><span class="steps__no" aria-hidden="true">1</span><p>Ви надсилаєте файл, фото або опис.</p></li>
+      <li><span class="steps__no" aria-hidden="true">2</span><p>Ми рахуємо ціну і строк, погоджуємо з вами матеріал.</p></li>
+      <li><span class="steps__no" aria-hidden="true">3</span><p>Ви підтверджуєте замовлення. Ми друкуємо і перевіряємо розміри.</p></li>
+      <li><span class="steps__no" aria-hidden="true">4</span><p>Ви забираєте деталь у Львові або отримуєте її Новою поштою чи Укрпоштою.</p></li>
+    </ol>
+    <figure class="steps__fig">
+      <picture>
+        <source type="image/avif" srcset="img/caliper-480.avif 480w, img/caliper-800.avif 800w, img/caliper-1200.avif 1200w" sizes="(min-width: 900px) 55vw, 100vw">
+        <source type="image/webp" srcset="img/caliper-480.webp 480w, img/caliper-800.webp 800w, img/caliper-1200.webp 1200w" sizes="(min-width: 900px) 55vw, 100vw">
+        <img src="img/caliper-800.webp" width="800" height="537" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+             alt="Ілюстрація: руки міряють штангенциркулем темно-сірий друкований кронштейн на верстаті.">
+      </picture>
+      <figcaption class="caption"><span class="caption__no">Пл. 04</span><span>Крок 3: перевірка розмірів штангенциркулем.</span><span class="ai-note">Ілюстрація ШІ.</span></figcaption>
+    </figure>
+  </div>
+  <p class="draft">Чернетка: чи потрібна передоплата і яка частка, вирішують власник і виконавець.</p>
+</section>
+
+<!-- 05 PROOF: honest empty slots + materials -->
+<section class="proof" aria-labelledby="proof-h">
+  <header class="section-head">
+    <p class="kicker"><span class="folio">04</span> Докази</p>
+    <h2 id="proof-h">Деталі, які вже працюють</h2>
+  </header>
+  <ul class="proof__slots">
+    <li class="slot"><span class="slot__label">Місце для фото майстерні</span><p>тут буде фото: функціональна деталь поруч із лінійкою; матеріал <span class="ph-x">[X]</span>; час друку <span class="ph-x">[X]</span> год</p></li>
+    <li class="slot"><span class="slot__label">Місце для фото майстерні</span><p>тут буде фото: зламана деталь і надрукована заміна поруч, штангенциркуль у кадрі</p></li>
+    <li class="slot"><span class="slot__label">Місце для фото майстерні</span><p>тут буде фото: корпус або кріплення на місці встановлення</p></li>
+  </ul>
+
+  <div class="materials">
+    <figure class="materials__fig">
+      <picture>
+        <source type="image/avif" srcset="img/thread-480.avif 480w, img/thread-800.avif 800w" sizes="(min-width: 900px) 30vw, 70vw">
+        <source type="image/webp" srcset="img/thread-480.webp 480w, img/thread-800.webp 800w" sizes="(min-width: 900px) 30vw, 70vw">
+        <img src="img/thread-800.webp" width="800" height="1071" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+             alt="Ілюстрація: зелена друкована кришка з різьбою, накручена на горловину, крупним планом.">
+      </picture>
+      <figcaption class="caption"><span class="caption__no">Пл. 05</span><span>Різьбове з'єднання, надруковане FDM.</span><span class="ai-note">Ілюстрація ШІ.</span></figcaption>
+    </figure>
+    <table class="materials__table">
+      <caption class="sr-only">Матеріали і де вони доречні</caption>
+      <thead><tr><th scope="col">Матеріал</th><th scope="col">Де доречний</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">PLA</th><td>макети, прототипи форми, деталі для приміщень</td></tr>
+        <tr><th scope="row">PETG</th><td>деталі під помірне навантаження і вологу</td></tr>
+        <tr><th scope="row">ASA</th><td>деталі для вулиці і сонця</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="draft">Чернетка: фото робіт дає виконавець; матеріали в наявності і їхнє призначення виконавець підтверджує, властивості звіряємо з даташитами виробника.</p>
+</section>
+
+<!-- 06 DELIVERY -->
+<section class="delivery" id="dostavka" aria-labelledby="delivery-h">
+  <figure class="delivery__fig">
+    <picture>
+      <source type="image/avif" srcset="img/parcel-480.avif 480w, img/parcel-800.avif 800w, img/parcel-1200.avif 1200w" sizes="(min-width: 900px) 58vw, 100vw">
+      <source type="image/webp" srcset="img/parcel-480.webp 480w, img/parcel-800.webp 800w, img/parcel-1200.webp 1200w" sizes="(min-width: 900px) 58vw, 100vw">
+      <img src="img/parcel-800.webp" width="800" height="537" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+           alt="Ілюстрація: відкрита картонна коробка з трьома друкованими деталями в крафтовому папері.">
+    </picture>
+    <figcaption class="caption"><span class="caption__no">Пл. 06</span><span>Деталі, запаковані до відправки.</span><span class="ai-note">Ілюстрація ШІ.</span></figcaption>
+  </figure>
+  <div class="delivery__text">
+    <p class="kicker"><span class="folio">05</span> Отримання</p>
+    <h2 id="delivery-h">Отримання і оплата</h2>
+    <ul class="rules">
+      <li><strong>У Львові:</strong> особиста передача, місце і час погоджуємо.</li>
+      <li><strong>По Україні:</strong> Нова пошта або Укрпошта.</li>
+      <li>Замовник оплачує замовлення і доставку за тарифом перевізника.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 07 FAQ -->
+<section class="faq" id="pytannia" aria-labelledby="faq-h">
+  <header class="section-head">
+    <p class="kicker"><span class="folio">06</span> Питання</p>
+    <h2 id="faq-h">Коротко про головне</h2>
+  </header>
+  <div class="faq__grid">
+    <div class="faq__list">
+      <details open>
+        <summary>Скільки коштує надрукувати деталь?</summary>
+        <p>Ціна залежить від маси, матеріалу і кількості. Орієнтир - від <span class="ph-x">[X]</span> грн/г, мінімум <span class="ph-x">[X]</span> грн. Точну суму назвемо після файлу або фото.</p>
+      </details>
+      <details>
+        <summary>У мене немає 3D-моделі. Що робити?</summary>
+        <p>Змоделюємо її за фото, ескізом, кресленням або зразком.</p>
+      </details>
+      <details>
+        <summary>Ви друкуєте будь-що?</summary>
+        <p>Ні. Перелік того, за що ми не беремося, є на сторінці «Про нас».</p>
+      </details>
+      <details>
+        <summary>Ви працюєте з іншими містами?</summary>
+        <p>Так. Файл або фото можна надіслати онлайн, а готову деталь ми відправимо поштою.</p>
+      </details>
+    </div>
+    <figure class="faq__fig">
+      <picture>
+        <source type="image/avif" srcset="img/fdm-vs-resin-480.avif 480w, img/fdm-vs-resin-800.avif 800w" sizes="(min-width: 900px) 36vw, 100vw">
+        <source type="image/webp" srcset="img/fdm-vs-resin-480.webp 480w, img/fdm-vs-resin-800.webp 800w" sizes="(min-width: 900px) 36vw, 100vw">
+        <img src="img/fdm-vs-resin-800.webp" width="800" height="468" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+             alt="Ілюстрація: дві однакові шестерні, матова зелена з шарами друку і гладка прозора бурштинова.">
+      </picture>
+      <figcaption class="caption"><span class="caption__no">Пл. 07</span><span>Та сама форма, різна поверхня: FDM-пластик (ліворуч) і фотополімер (праворуч).</span><span class="ai-note">Ілюстрація ШІ.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 08 CTA -->
+<section class="cta" aria-labelledby="cta-h">
+  <div class="cta__text">
+    <h2 id="cta-h">Надішліть файл або фото - ціну назвемо до замовлення</h2>
+    <a class="btn btn--light" href="#tsiny">Розрахувати вартість</a>
+    <p class="contacts contacts--light"><a class="ph" href="#" data-placeholder="telegram-link">[Telegram]</a> · <a class="ph" href="#" data-placeholder="viber-link">[Viber]</a> · <a class="ph" href="#" data-placeholder="phone">[телефон]</a></p>
+  </div>
+  <figure class="cta__fig">
+    <picture>
+      <source type="image/avif" srcset="img/three-parts-480.avif 480w, img/three-parts-800.avif 800w" sizes="(min-width: 900px) 44vw, 100vw">
+      <source type="image/webp" srcset="img/three-parts-480.webp 480w, img/three-parts-800.webp 800w" sizes="(min-width: 900px) 44vw, 100vw">
+      <img src="img/three-parts-800.webp" width="800" height="537" loading="lazy" decoding="async" data-placeholder="ai-illustration"
+           alt="Ілюстрація: три друковані деталі на верстаті: темно-сірий кутник, зелена втулка і біла кліпса для кабелю.">
+    </picture>
+    <figcaption class="caption caption--light"><span class="caption__no">Пл. 08</span><span>Кутник, втулка, кліпса для кабелю.</span><span class="ai-note">Ілюстрація ШІ.</span></figcaption>
+  </figure>
+</section>
+
+<!-- 09 LINKS: index -->
+<nav class="index" aria-labelledby="index-h">
+  <h2 id="index-h" class="index__h">Зміст сайту</h2>
+  <ol class="index__list">
+    <li><a href="#" data-placeholder="page-tsiny" title="Сторінка з'явиться на сайті">ціни на 3D-друк за грам</a></li>
+    <li><a href="#" data-placeholder="page-3d-druk-lviv" title="Сторінка з'явиться на сайті">3D-друк у Львові</a></li>
+    <li><a href="#" data-placeholder="page-3d-modeliuvannia" title="Сторінка з'явиться на сайті">3D-моделювання за фото або ескізом</a></li>
+    <li><a href="#" data-placeholder="page-detal-za-zrazkom" title="Сторінка з'явиться на сайті">деталь за зразком замість зламаної</a></li>
+    <li><a href="#" data-placeholder="page-3d-druk-fdm" title="Сторінка з'явиться на сайті">інженерний FDM-друк</a></li>
+    <li><a href="#" data-placeholder="page-dostavka-oplata" title="Сторінка з'явиться на сайті">доставка і оплата</a></li>
+    <li><a href="#" data-placeholder="page-pro-nas" title="Сторінка з'явиться на сайті">що ми не беремося друкувати</a></li>
+  </ol>
+</nav>
+
+</main>
+
+<footer class="colophon">
+  <p class="wordmark wordmark--small"><span class="ph-brand" translate="no">[НАЗВА]</span></p>
+  <p>Усі фотографії на цій сторінці є ілюстраціями, згенерованими ШІ. Це не роботи майстерні і не замовлення клієнтів; їх замінять реальні фото.</p>
+  <p>Ціни і строки позначені <span class="ph-x">[X]</span> до підтвердження виконавцем.</p>
+</footer>
+
+<div class="dock" aria-label="Швидкі дії">
+  <a class="btn" href="#tsiny">Розрахувати</a>
+  <a class="btn btn--ghost" href="#kontakty">Надіслати фото</a>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>

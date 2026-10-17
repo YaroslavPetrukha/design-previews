@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Три варіанти дизайну головної</title>
+<meta name="description" content="Прототипи дизайну головної сторінки сайту 3D-друку. Ілюстрації згенеровані, ціни і контакти поки заповнювачі.">
+<style>
+  :root { --bg:#F4F1EA; --ink:#1B1816; --mute:#5C554D; --line:#D8D2C6; --card:#FFFFFF; --acc:#2B2BE0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141210; --ink:#F1EDE4; --mute:#A8A196; --line:#33302B; --card:#1D1A17; --acc:#8C8CFF; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: clamp(26px, 6vw, 38px); line-height: 1.12; margin: 0 0 12px; letter-spacing: -0.01em; }
+  .lead { color: var(--mute); margin: 0 0 28px; max-width: 56ch; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  a.card { display:block; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 20px 18px; color:inherit; text-decoration:none; min-height:44px; }
+  a.card:hover { border-color: var(--acc); }
+  a.card:focus-visible { outline: 3px solid var(--acc); outline-offset: 3px; }
+  .n { font: 600 13px/1 ui-monospace, Menlo, monospace; color: var(--acc); letter-spacing: .06em; text-transform: uppercase; }
+  .t { font-size: 22px; font-weight: 650; margin: 8px 0 6px; }
+  .d { color: var(--mute); margin: 0 0 10px; }
+  .go { font-weight: 600; color: var(--acc); }
+  .note { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--mute); font-size: 15px; }
+  .note b { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Три варіанти дизайну головної сторінки</h1>
+  <p class="lead">Це чернетки для обговорення. Дивіться на телефоні й на комп'ютері, потім скажіть, що подобається, що ні і чого бракує.</p>
+  <ul>
+    <li><a class="card" href="v1-obiem/index.html">
+      <span class="n">Варіант 1</span>
+      <div class="t">«Об'єм»</div>
+      <p class="d">Робоча деталь у 3D обертається на першому екрані. Коли гортаєте, вона перетворюється з моделі на готову річ і показує розміри та ціну.</p>
+      <span class="go">Відкрити →</span></a></li>
+    <li><a class="card" href="v2-foto/index.html">
+      <span class="n">Варіант 2</span>
+      <div class="t">«Фото»</div>
+      <p class="d">Журнальна подача з великими знімками. Є повзунок «зламана деталь / надрукована копія», який видно в русі.</p>
+      <span class="go">Відкрити →</span></a></li>
+    <li><a class="card" href="v3-brand/index.html">
+      <span class="n">Варіант 3</span>
+      <div class="t">«Бирка»</div>
+      <p class="d">Яскравий впізнаваний знак: бирка з ціною, як на пакеті з деталлю. Один насичений колір, великі цифри, мінімум зайвого.</p>
+      <span class="go">Відкрити →</span></a></li>
+  </ul>
+  <p class="note"><b>Що тут ще не справжнє.</b> Знімки згенеровані як ілюстрації і мають позначку «Ілюстрація». Ціни показані як <b>[X]</b>, назва як <b>[НАЗВА]</b>, контакти як заповнювачі. Форма нікуди нічого не надсилає. Реальні фото, ціни і контакти додамо після відповідей виконавця.</p>
+</main>
+</body>
+</html>
